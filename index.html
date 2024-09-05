@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transitions</title>
+
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+
+    .container{
+      padding: 50px;
+    }
+
+    button{
+      background-color: #0f0;
+      border: 0;
+      border-radius: 10px;
+      cursor: pointer;
+      padding: 15px;
+      /* transition-duration: 0.2s; */
+      /* transition-property:background-color , color , width ; */
+      transition: width 1s cubic-bezier(0,0,0,0);
+
+      width: 100px;
+    }
+
+    button:hover{
+      background-color: red;
+      color: white;
+      width: 300px;
+      /* transform: translateX(30px);
+      transform: translateY(30px); */
+      /* transform: translate(30px , 20px); */
+
+    }
+
+  </style>
+</head>
+<body>
+     <div class="container">
+      <button>Click Here</button>
+     </div>
+</body>
+</html>
